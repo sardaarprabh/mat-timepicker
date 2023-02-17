@@ -1,0 +1,16 @@
+
+<div class="container">
+  <p>Time picker using mat-timepicker</p>
+  <mat-form-field appearance="fill">
+    <mat-label>TIMEPICKER</mat-label>
+
+    <!-- The timepicker input -->
+    <input matTimepicker #t="matTimepicker" #time="ngModel" [strict]="false" id="timepicker-example" mode="12h"
+      [ngModel]="defaultValue" name="time" (timeChange)="timeChangeHandler($event)"
+      (invalidInput)="invalidInputHandler()">
+    <!-- An icon for the timepicker input that will open the timepicker dialog when clicked -->
+    <!-- <mat-icon matSuffix (click)="t.showDialog()">access_time</mat-icon> -->
+  </mat-form-field>
+</div>
+
+
